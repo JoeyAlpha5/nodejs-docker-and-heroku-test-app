@@ -51,35 +51,4 @@ app.listen(port, () => {
 })
 
 
-// get the template
-// const getTemplate = (req,resp)=>{
-//     fs.readFile('./templates/index.html', (err,template)=>{
-//         if(err){
-//             console.log(err);
-//             resp.end();
-//         }else{
-//             resp.end(template);
-//         }
-//     })
-// }
 
-
-// get the css file
-// const getCssFile = (req,res)=>{
-//     let browser_is_requesting_css = req.url.includes('.css');
-//     if(browser_is_requesting_css){
-//         let css_path = path.join(current_directory, 'temlates', req.url);
-//         console.log("req url ", req.url);
-//         console.log("css path ",css_path);
-//         console.log("current directory ",current_directory);
-//         fs.readFile(css_path,(err,data)=>{
-//             if(err){
-//                 console.log(err);
-//                 res.end();
-//             }else{
-//                 res.writeHead(200,{'Content-Type':'text/css'});
-//                 res.end(data,'utf-8');
-//             }
-//         })
-//     }
-// }
